@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kooperador &mdash; Tu plataforma de Ahorro con IA</title>
+  <meta name="description" content="Kooperador Group simplifica la conexión entre negocios y personas: comparador de tarifas, CRM y control horario con inteligencia artificial.">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Librerías UI (ver docs/control_net_ui.md), servidas en local desde vendor/ — style.css va el último para que el diseño propio prevalezca -->
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+  <link rel="stylesheet" href="vendor/slicknav/slicknav.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.addEventListener('beforeunload', function () {
+      window.scrollTo(0, 0);
+    });
+  </script>
+</head>
+<body>
+
+  <div class="custom-cursor" id="customCursor"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">
+        <img src="assets/img/logo_login.png" alt="Kooperador">
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#sobre-nosotros" class="nav__link">Sobre nosotros</a></li>
+          <li><a href="#que_hacemos" class="nav__link">Qué hacemos</a></li>
+          <li class="nav__item--dropdown">
+            <a href="#soluciones" class="nav__link">Soluciones <span class="nav__caret" aria-hidden="true">&#9662;</span></a>
+            <ul class="nav__dropdown">
+              <li><a href="#koomparador" class="nav__dropdown-link">Koomparador</a></li>
+              <li><a href="#koolaborador" class="nav__dropdown-link">Koolaborador</a></li>
+              <li><a href="#koodice" class="nav__dropdown-link">Koodice</a></li>
+              <li><a href="#kooclock" class="nav__dropdown-link">Kooclock</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#contacto" class="btn btn--primary nav__cta">Contacta con nosotros</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero + carrusel de texto: caben juntos en la pantalla inicial, sin scroll -->
+    <div class="above-fold">
+      <!-- HERO (centrado, sin imagen partida, como controlnet.es) -->
+      <section id="top" class="hero hero--full">
+        <div class="container hero__inner">
+          <span class="eyebrow eyebrow--center">Kooperador Telecom S.L.</span>
+          <h1><span class="hero__typed">Tu plataforma de </span><span class="hero__highlight">Ahorro con&nbsp;IA</span></h1>
+          <p class="hero__lead">Simplificamos la conexión entre negocios y personas.</p>
+        </div>
+
+        <!-- CARRUSEL DE TEXTO (Swiper, 1 frase a la vez con autoplay) con el mismo degradado del título -->
+        <div class="swiper text-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <span class="text-swiper__item">Agencia de servicios digitales: campañas de captación de clientes, campañas de fidelización, comunicación y soporte con cartera de clientes.</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="text-swiper__item">Desarrollo de software a medida: plataformas web, CRM, integraciones y automatización de procesos.</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="text-swiper__item">Koomparador: comparador inteligente de tarifas de energía, telecomunicaciones, alarmas y seguros.</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="text-swiper__item">Koolaborador: CRM con gestión de clientes, presupuestos, comisiones y trazabilidad total.</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="text-swiper__item">Koodice: gestión integral de clientes, oportunidades, tareas y facturación en un solo lugar.</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="text-swiper__item">Kooclock: control horario y fichaje desde móvil, ordenador o WhatsApp.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+   <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros" class="section section--alt about">
+      <div class="container about__inner">
+        <div class="about__content">
+          <span class="eyebrow">Sobre Kooperador Group</span>
+          <h2 class="section__title section__title--left">Simplificamos la conexión entre negocios y personas</h2>
+          <p>
+            Desde 1998 desarrollamos plataformas digitales con inteligencia artificial e
+            interconexión de sistemas, poniendo siempre al cliente en el centro de cada
+            decisión: desde autónomos hasta pymes con cientos de trabajadores.
+          </p>
+          <p>
+            No trabajamos para priorizar intereses de operadores ni maximizar rentabilidades
+            externas. Nuestro objetivo es representar las necesidades reales de nuestros
+            clientes, con transparencia y tecnología útil.
+          </p>
+          <p class="about__signature">
+            Nuestro mayor activo siempre ha sido y seguirá siendo nuestros clientes y todas
+            las personas que forman parte de este proyecto.
+          </p>
+        </div>
+        <div class="about__visual">
+          <div class="about__badge">
+            <img src="assets/img/logo_login.png" alt="Kooperador">
+          </div>
+          <ul class="about__facts">
+            <li><strong>1998</strong><span>Origen del proyecto</span></li>
+            <li><strong>IA</strong><span>Asistente que vigila tus facturas</span></li>
+            <li><strong>360&deg;</strong><span>CRM, comparador y control horario</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+        <!-- QUÉ HACEMOS (complemento de Sobre nosotros) -->
+    <section class="section what-we-do"  id="que_hacemos">
+      <div class="container">
+        <span class="eyebrow eyebrow--center">Qué hacemos</span>
+        <h2 class="section__title">Todo lo que tu negocio necesita, en un mismo sitio</h2>
+        <div class="what-we-do__grid">
+          <div class="what-we-do__card">
+            <h3>Herramientas de gestión</h3>
+            <p>Un CRM sencillo y escalable, pensado tanto para autónomos que empiezan como para pymes con cientos de trabajadores.</p>
+            <ul class="solution__list">
+              <li>Control horario y agendas</li>
+              <li>Gestión de vacaciones</li>
+              <li>Análisis de actividad y ventas</li>
+              <li>Facturación con Verifactu</li>
+            </ul>
+          </div>
+          <div class="what-we-do__card">
+            <h3>Agencia de servicios digitales</h3>
+            <p>Acompañamos a nuestros clientes también en la captación y fidelización de su propia cartera.</p>
+            <ul class="solution__list">
+              <li>Campañas de captación de clientes</li>
+              <li>Campañas de fidelización</li>
+              <li>Comunicación y soporte a cartera de clientes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUCIONES DETALLADAS -->
+    <section id= class="section">
+      <div class="container">
+        <div id="soluciones">
+          <span class="eyebrow eyebrow--center">Nuestro ecosistema</span>
+          <h2 class="section__title">Soluciones conectadas entre sí</h2>
+          <p class="section__lead">
+            Nuestro ecosistema tecnológico está compuesto por diferentes soluciones conectadas entre sí.
+          </p>
+        </div>
+        <ul class="solution-nav" id="solutionNav">
+          <li><a href="#koomparador" class="solution-nav__link is-active">Koomparador</a></li>
+          <li><a href="#koolaborador" class="solution-nav__link">Koolaborador</a></li>
+          <li><a href="#koodice" class="solution-nav__link">Koodice</a></li>
+          <li><a href="#kooclock" class="solution-nav__link">Kooclock</a></li>
+        </ul>
+
+        <div id="koomparador" class="solution solution--alt">
+          <div class="solution__text">
+            <span class="eyebrow">&ldquo;Anticípate, ahorra y gana&rdquo;</span>
+            <h3>Koomparador</h3>
+            <p>
+              Plataforma inteligente de comparación de precios y servicios que permite a
+              particulares, autónomos y empresas comparar y contratar fácilmente entre operadores
+              de energía, telecomunicaciones, alarmas y seguros.
+              Recogemos, analizamos y adaptamos información de múltiples sectores como energía,
+              telecomunicaciones, alarmas, seguros y nuevos mercados en expansión, transformándola en 
+              herramientas intuitivas, eficientes y accesibles.
+            </p>
+            <ul class="solution__list">
+              <li>Más de 100 operadores y más de 15.000 tarifas</li>
+              <li>Seguimiento de precios 24/7 y análisis en tiempo real</li>
+              <li>Sectores: energía, telecomunicaciones, alarmas, seguros y nuevos mercados en expansión</li>
+              <li>Herramientas intuitivas, eficientes y accesibles</li>
+            </ul>
+            <a href="#contacto" class="btn btn--primary">Accede</a>
+          </div>
+        </div>
+
+        <div id="koolaborador" class="solution solution--alt">
+          <div class="solution__text">
+            <span class="eyebrow">&ldquo;CRM donde las oportunidades no tienen límites&rdquo;</span>
+            <h3>Koolaborador</h3>
+            <p>
+              Plataforma CRM profesional que integra gestión de clientes, presupuestos, oportunidades, 
+              facturación con sistema Verifactu, protección de datos, tareas, agenda, control horario, 
+              gestión de agentes y análisis comercial. Además, permite comercializar servicios del 
+              ecosistema Koomparador con trazabilidad completa y acceso a altas comisiones.
+            </p>
+            <ul class="solution__list">
+              <li>Gestión de clientes, presupuestos y oportunidades</li>
+              <li>Facturación con sistema Verifactu y protección de datos</li>
+              <li>Tareas, agenda, control horario y gestión de agentes</li>
+              <li>Análisis comercial y acceso a altas comisiones</li>
+            </ul>
+            <a href="#contacto" class="btn btn--primary">Accede</a>
+          </div>
+        </div>
+
+        <div id="koodice" class="solution solution--alt">
+          <div class="solution__text">
+            <span class="eyebrow">Gestión integral para tu negocio</span>
+            <h3>Koodice</h3>
+            <p>
+              Nace como respuesta a las necesidades de gestión detectadas en nuestros propios
+              clientes: un CRM enfocado en la gestión integral de cualquier negocio.
+            </p>
+            <ul class="solution__list">
+              <li>Gestión integral de clientes y oportunidades</li>
+              <li>Tareas y agenda</li>
+              <li>Control horario y facturación con Verifactu</li>
+              <li>Solución práctica, flexible y eficiente</li>
+            </ul>
+            <a href="#contacto" class="btn btn--primary">Accede</a>
+          </div>
+        </div>
+
+        <div id="kooclock" class="solution solution--alt">
+          <div class="solution__text">
+            <span class="eyebrow">Control horario simple y legal</span>
+            <h3>Kooclock</h3>
+            <p>
+              Plataforma de control horario de Kooperador Group que permite a empresas y
+              autónomos gestionar el fichaje de sus trabajadores desde cualquier lugar.
+            </p>
+            <ul class="solution__list">
+              <li>Fichaje desde móvil, ordenador o WhatsApp</li>
+              <li>Cumplimiento normativo y control de la jornada en tiempo real</li>
+              <li>Solución sencilla, segura y de bajo coste</li>
+              <li>Meses gratuitos para clientes del ecosistema</li>
+            </ul>
+            <a href="#contacto" class="btn btn--primary">Accede</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AHORRO CON IA -->
+    <section class="section feature">
+      <div class="container feature__inner">
+        <span class="eyebrow eyebrow--center">Modo ahorro con IA</span>
+        <h2 class="section__title">Tu asistente de inteligencia artificial vigila tus facturas por ti</h2>
+        <p class="section__lead">
+          Analizamos tus facturas y tu consumo con IA para avisarte en cuanto exista una tarifa
+          mejor, sin que tengas que comparar nada manualmente. Ponemos siempre al cliente en el
+          centro de cada decisión.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section section--alt contact">
+      <div class="container contact__inner">
+        <div class="contact__info">
+          <span class="eyebrow">Hablemos</span>
+          <h2 class="section__title section__title--left">Contacta con nosotros</h2>
+          <p>
+            Cuéntanos qué necesitas y nuestro equipo comercial te responderá en menos de 8 horas.
+            También puedes escribirnos o llamarnos directamente.
+          </p>
+
+          <ul class="contact__list">
+            <li>
+              <strong>Teléfono</strong>
+              <span><a href="tel:+34919920149">919 920 149</a></span>
+            </li>
+            <li>
+              <strong>WhatsApp</strong>
+              <span><a href="https://wa.me/34722333092" target="_blank" rel="noopener">722 333 092</a></span>
+            </li>
+            <li>
+              <strong>Email</strong>
+              <span><a href="mailto:hola@kooperador.es">hola@kooperador.es</a></span>
+            </li>
+            <li>
+              <strong>Dirección</strong>
+              <span>Ctra. Toledo, 26, 13005 Ciudad Real</span>
+            </li>
+            <li>
+              <strong>Horario</strong>
+              <span>Lunes a jueves: 09:00&ndash;18:00<br>Viernes: 08:00&ndash;14:00<br>Web disponible 24/7, los 365 días</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact__form" action="#" method="post">
+          <div class="contact__field">
+            <label for="contact-name">Nombre completo</label>
+            <input type="text" id="contact-name" name="name" required>
+          </div>
+          <div class="contact__field">
+            <label for="contact-phone">Teléfono</label>
+            <input type="tel" id="contact-phone" name="phone" required>
+          </div>
+          <div class="contact__field">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" required>
+          </div>
+          <div class="contact__field">
+            <label for="contact-message">Explícanos tus dudas</label>
+            <textarea id="contact-message" name="message" rows="4"></textarea>
+          </div>
+          <div class="contact__checkbox">
+            <input type="checkbox" id="contact-privacy" name="privacy" required>
+            <label for="contact-privacy">He leído y acepto la <a href="#">política de privacidad</a>.</label>
+          </div>
+          <div class="contact__checkbox">
+            <input type="checkbox" id="contact-marketing" name="marketing">
+            <label for="contact-marketing">Acepto recibir comunicaciones comerciales.</label>
+          </div>
+          <button type="submit" class="btn btn--primary contact__submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <img class="footer__logo" src="assets/img/logo_login.png" alt="Kooperador">
+        <p>Simplificamos la conexión entre negocios y personas.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Soluciones</h4>
+        <ul>
+          <li><a href="#koomparador">Koomparador</a></li>
+          <li><a href="#koolaborador">Koolaborador</a></li>
+          <li><a href="#koodice">Koodice</a></li>
+          <li><a href="#kooclock">Kooclock</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+          <li><a href="#sectores">Sectores</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Política de cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year"></span> Kooperador Telecom S.L. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Volver arriba">&uarr;</a>
+
+  <!-- Librerías servidas en local desde vendor/ para no depender de CDNs -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <!-- GSAP + ScrollTrigger: animaciones de aparición al hacer scroll -->
+  <script src="vendor/gsap/gsap.min.js"></script>
+  <script src="vendor/gsap/ScrollTrigger.min.js"></script>
+
+  <!-- Librerías UI (docs/control_net_ui.md): scroll con inercia, carrusel, lightbox, texto animado, menú móvil -->
+  <script src="vendor/lenis/lenis.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="vendor/split-type/split-type.min.js"></script>
+  <script src="vendor/slicknav/jquery.slicknav.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
