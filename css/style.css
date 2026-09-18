@@ -154,6 +154,7 @@ ul {
 
 .logo img {
   height: 36px;
+  width: auto;
 }
 
 .nav {
@@ -798,6 +799,7 @@ ul {
   z-index: 1;
   width: 70%;
   max-width: 260px;
+  height: auto;
 }
 
 .about__facts {
@@ -935,7 +937,9 @@ ul {
   padding-bottom: 2rem;
 }
 
-.footer__col h4 {
+.footer__col .footer__title {
+  font-family: var(--font-heading);
+  font-weight: 700;
   color: #fff;
   font-size: 0.95rem;
   margin-bottom: 1rem;
@@ -959,6 +963,7 @@ ul {
 
 .footer__logo {
   height: 32px;
+  width: auto;
   filter: brightness(0) invert(1);
   margin-bottom: 1rem;
 }
